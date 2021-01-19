@@ -11,7 +11,19 @@ const GlobalStyle = createGlobalStyle`
 
 body{
     background: #1b1b1b;
+    font-family: 'Inter', sans-serif;
+}
 
+html{
+    @media (max-width: 1500px){
+        font-size:60%;
+    }
+    @media (max-width:970px){
+        font-size:50%;
+    }
+    @media (max-width:600px){
+        font-size:30%;
+    }
 }
 
 button{
@@ -31,14 +43,17 @@ button{
 }
 
 h2{
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 4rem;
+    color:white;
 }
 h3{
     color: white;
 }
 h4{
     font-weight: bold;
+    font-size:2rem;
+    color:white;
 }
 span{
     font-weight: bold;
